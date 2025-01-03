@@ -1,0 +1,18 @@
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Adjusted for smoother transition */
+}
+.logo-ticker {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.logo-track {
+    display: flex;
+    flex-shrink: 0;
+    animation: ticker 40s linear infinite; /* Increased duration for smoother animation */
+}
+.logo-ticker:hover .logo-track {
+    animation-play-state: paused;
+}
