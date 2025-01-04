@@ -28,4 +28,5 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // Route Untuk Profile User
-Route::get('/profile', [ProfileController::class, 'userProfile'])->name('profile');
+Route::get('/profile', [ProfileController::class, 'userProfile'])->middleware('auth')->name('profile');
+Route::put('/profile/update', [ProfileController::class, 'update'])->name('update');

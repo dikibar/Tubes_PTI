@@ -93,9 +93,8 @@
     {{-- INI HEADER     --}}
     <x-header :jobCount2="$jobCount"></x-header>
     
-
     @if (!$jobtitle && !$jobType && !$jobIndustry && !$jobLevel)
-        <div class=" px-4 py-8 mx-auto  bg-white" id="company">
+        <div class="px-4 py-8 mx-auto bg-white " id="company">
             <div class="mb-8 text-center">
                 <h2 class="text-2xl font-bold text-gray-800">Company Partner</h2>
                 <p class="text-lg text-gray-600">Explore top companies offering remote job opportunities</p>
@@ -131,19 +130,19 @@
 
             <!-- Job Title Search -->
             <div class="relative flex items-center w-full sm:w-auto">
-                <svg class="absolute w-5 h-5  text-gray-400 left-3" xmlns="http://www.w3.org/2000/svg"
+                <svg class="absolute w-5 h-5 text-gray-400 left-3" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="11" cy="11" r="8" />
                     <line x1="21" y1="21" x2="16.65" y2="16.65" />
                 </svg>
                 <input type="text" name="jobtitle" placeholder="Search job title..." value="{{ $jobtitle ?? '' }}"
-                    class="w-full py-2 pl-10 pr-4 text-sm bg-slate-50 text-gray-700 transition duration-200 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white" />
+                    class="w-full py-2 pl-10 pr-4 text-sm text-gray-700 transition duration-200 border border-gray-300 rounded-lg bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white" />
             </div>
 
             <!-- Job Type Filter -->
             <div class="relative flex items-center w-full sm:w-auto">
                 <select name="job_type"
-                    class="w-full py-2 pl-4 pr-10 text-sm text-gray-700 transition duration-200 bg-slate-50 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white">
+                    class="w-full py-2 pl-4 pr-10 text-sm text-gray-700 transition duration-200 border border-gray-300 rounded-lg appearance-none bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white">
                     <option value="">Job Type</option>
                     <option value="full-time" {{ strtolower($jobType) == 'full-time' ? 'selected' : '' }}>Full-time
                     </option>
@@ -162,7 +161,7 @@
             <!-- Job Industry Filter -->
             <div class="relative flex items-center w-full sm:w-auto">
                 <select name="job_industry"
-                    class="w-full py-2 pl-4 pr-10 text-sm text-gray-700 transition duration-200 bg-slate-50 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white">
+                    class="w-full py-2 pl-4 pr-10 text-sm text-gray-700 transition duration-200 border border-gray-300 rounded-lg appearance-none bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white">
                     <option value="">Industry</option>
 
                     <!-- Technology Group -->
@@ -223,12 +222,10 @@
                 </svg>
             </div>
 
-
-
             <!-- Job Level Filter -->
             <div class="relative flex items-center w-full sm:w-auto">
                 <select name="job_level"
-                    class="w-full py-2 pl-4 pr-10 text-sm text-gray-700 transition duration-200 bg-slate-50 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white">
+                    class="w-full py-2 pl-4 pr-10 text-sm text-gray-700 transition duration-200 border border-gray-300 rounded-lg appearance-none bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white">
                     <option value="">Level</option>
                     <option value="any" {{ strtolower($jobLevel) == 'any' ? 'selected' : '' }}>Any</option>
                     <option value="senior" {{ strtolower($jobLevel) == 'senior' ? 'selected' : '' }}>Senior</option>
