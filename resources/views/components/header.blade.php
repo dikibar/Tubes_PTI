@@ -1,16 +1,15 @@
 @props(['jobCount2'])
 <div>
-    <section class="relative text-black overflow-hidden min-h-screen bg-cover bg-center flex items-center justify-center"
+    <section class="relative flex items-center justify-center min-h-screen overflow-hidden text-black bg-center bg-cover"
         style="background-image: url('img/bg2.png');">
         <!-- Background Decoration -->
 
-
         <!-- Hero Content -->
-        <div class="flex flex-col">
-        <div class="w-full flex flex-row gap-6 py-12 justify-between px-12">
+        <div class="flex flex-col mt-8">
+        <div class="flex flex-row justify-between w-full gap-6 px-12 py-12">
             <!-- Left Section -->
             <div class="space-y-6 text-center lg:text-left animate-fade-in-left">
-                <div class="inline-block px-4 py-2 text-sm rounded-full bg-blue-100 backdrop-blur-sm">
+                <div class="inline-block px-4 py-2 text-sm bg-blue-100 rounded-full backdrop-blur-sm">
                     <span class="text-blue-800">New</span> Remote Job Platform
                 </div>
 
@@ -24,8 +23,8 @@
                 </p>
 
                 <div class="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start ">
-                    <article class="flex flex-col gap-4 rounded-xl border border-gray-200 bg-white p-6 w-1/2">
-                <div class="inline-flex gap-2 self-end rounded bg-blue-100 p-1 text-green-600">
+                    <article class="flex flex-col w-1/2 gap-4 p-6 bg-white border border-gray-200 rounded-xl">
+                <div class="inline-flex self-end gap-2 p-1 text-green-600 bg-blue-100 rounded">
                     
 
                     <span class="text-xs font-medium"> 
@@ -49,19 +48,19 @@
 
             <div class="w-[370px] h-[370px] bg-cover bg-center rounded-3xl hidden lg:flex"
                 style="background-image: url('img/cewe.png');">
-                <div class="absolute ml-60 mt-3">
-                    <img src="img/dididd.png" alt="Hero Image" class="w-52 h-auto animate-floating">
+                <div class="absolute mt-3 ml-60">
+                    <img src="img/dididd.png" alt="Hero Image" class="h-auto w-52 animate-floating">
                 </div>
                 <div class="absolute mt-16 -ml-16">
-                    <img src="img/newest job.png" alt="Hero Image" class="w-52 h-auto animate-floating">
+                    <img src="img/newest job.png" alt="Hero Image" class="h-auto w-52 animate-floating">
                 </div>
-                <div class="absolute mt-72 -ml-16">
-                    <img src="img/2k.png" alt="Hero Image" class="w-52 h-auto animate-floating">
+                <div class="absolute -ml-16 mt-72">
+                    <img src="img/2k.png" alt="Hero Image" class="h-auto w-52 animate-floating">
                 </div>
             </div>
 
             
-            {{-- <div class="flex flex-col border border-red-500 w-full h-full">
+            {{-- <div class="flex flex-col w-full h-full border border-red-500">
                         <div class="flex border border-blue-700">
                             <img src="/img/newest job.png" alt="" class="w-64 ">
                             <img src="/img/2k.png" alt="" class="w-64">
