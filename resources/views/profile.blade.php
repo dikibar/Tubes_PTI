@@ -85,7 +85,7 @@
                     type="text" 
                     id="full_name" 
                     name="full_name" 
-                    value="{{ old('full_name', $user->profile->full_name) }}" 
+                    value="{{ old('full_name', $user->profile->full_name ?? $user->name) }}" 
                     class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                 @error('full_name')
                     <span class="text-sm text-red-500">{{ $message }}</span>
@@ -99,7 +99,7 @@
                     type="text" 
                     id="address" 
                     name="address" 
-                    value="{{ old('address', $user->profile->address) }}" 
+                    value="{{ old('address', $user->profile->address ?? '') }}" 
                     class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
             </div>
 
@@ -110,7 +110,7 @@
                     type="text" 
                     id="phone" 
                     name="phone" 
-                    value="{{ old('phone', $user->profile->phone) }}" 
+                    value="{{ old('phone', $user->profile->phone ?? '') }}" 
                     class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
             </div>
 
@@ -121,7 +121,7 @@
                     id="bio" 
                     name="bio" 
                     rows="3" 
-                    class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">{{ old('bio', $user->profile->bio) }}</textarea>
+                    class="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">{{ old('bio', $user->profile->bio ?? '') }}</textarea>
             </div>
 
             <!-- Tombol -->
