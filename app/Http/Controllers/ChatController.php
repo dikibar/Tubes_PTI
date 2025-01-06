@@ -13,7 +13,7 @@ class ChatController extends Controller
         $apiKey = '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';
 
         // Tambahkan sistem prompt untuk membuat respons lebih ringkas dan terarah
-        $systemPrompt = "Berikan jawaban yang singkat, padat, dan informatif. Gunakan bahasa percakapan yang ramah dan mudah dipahami. Batasi jawaban maksimal 3-4 kalimat.";
+        $systemPrompt = "Kamu adalah asisten chat website jobfinder, Berikan jawaban yang singkat, padat, dan informatif. Gunakan bahasa percakapan yang ramah dan mudah dipahami. Batasi jawaban maksimal 3-4 kalimat.";
 
         $data = [
             "model" => "Qwen/Qwen2.5-Coder-32B-Instruct",
